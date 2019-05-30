@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pacific Trails Resort :: Reservations</title>
+  <link rel="stylesheet" href="pacific.css" />
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>
+      Pacific Trails Resort
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="yurts.html">Yurts</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="organization.html">Organization</a></li>
+        <li><a href="design-practice.html">Design Practice</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Reservations at Pacific Trails</h2>
+      <h3>Contact Us</h3>
+      <p>Required information is marked with an asterisk (*).</p>
+      <form method="POST" action="http://webdevbasics.net/scripts/pacific.php">
+        <div>
+          <label for="myFName">* First Name</label>
+          <input type="text" id="myFName" name="first_name" required>
+        </div>
+        <div>
+          <label for="myLName">* Last Name</label>
+          <input type="text" id="myLName" name="last_name" required>
+        </div>
+        <div>
+          <label for="myEmail">* E-mail</label>
+          <input type="email" id="myEmail" name="email" required>
+        </div>
+        <div>
+          <label for="myPhone">Phone</label>
+          <input type="tel" id="myPhone" name="phone">
+        </div>
+        <div>
+          <label for="myDate">Arrival Date</label>
+          <input type="date" id="myDate" name="date">
+        </div>
+        <div>
+          <label for="myNights">Nights</label>
+          <input type="number" name="myNights" min="1" max="14" id="myNights">
+        </div>
+        <div>
+          <label for="myComments">* Comments</label>
+          <textarea id="myComments" name="comments" rows="2" cols="20" required></textarea>
+        </div>
+        <div class="button">
+          <button id="mySubmit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      Copyright @ 2019 Pacific Trails Resort<br>
+      <a href="mailto:email@example.com">email@example.com</a>
+    </footer>
+  </div>
+</body>
+
+</html>
